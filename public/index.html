@@ -3,10 +3,28 @@
   <head>
     <title>Trip Planner</title>
     <link rel="stylesheet" href="./style.css"></link>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v0.42.1/mapbox-gl.css' rel='stylesheet' />    
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.42.1/mapbox-gl.css' rel='stylesheet' />
     <script src="./bundle.js" defer></script>
   </head>
   <body>
-    <div id="map"></div>
+    <div id="header">
+      <h1>Trip Planner</h1>
+    </div>
+    <div id ="container">
+      <div id="menu-container">
+        <div id="menu-activities">
+          <h3>Hotels</h3>
+          <input list='hotels'>
+          <datalist id='hotels'>
+              <option value="Hotel 1">
+              <option value="Hotel 2">
+              <option value="Hotel 3">
+          </datalist>
+
+        </div>
+        <div id="itinerary"></div>
+      </div>
+      <div id="map"></div>
+    </div>
   </body>
 </html>
